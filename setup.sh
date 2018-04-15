@@ -1,0 +1,106 @@
+# Install all OS updates
+/usr/bin/sudo /usr/sbin/softwareupdate -i -a
+
+# Install Homebrew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# Install Mac App Store command line tool ( used by the next step )
+brew install mas
+
+# Install everything listed in Brewfile
+# See https://github.com/Homebrew/homebrew-bundle
+brew bundle 
+
+# Accept Xcode license
+sudo xcodebuild -license accept
+
+# Install Kubernetes command line client
+gcloud components install kubectl
+
+# Install j2 for our Kubernetes templates
+# use pip or pip2 or other version of pip if pip3 is not working
+pip3 install j2cli PyYAML
+
+# Convenient git alias
+git config --global alias.up 'pull --rebase --autostash'
+
+
+# now manual things
+# login to all installed apps where applicable
+# make sure the following is accessible to user: ~/Library/Application Support/Google/Chrome
+# install Microsoft Office via 365 - donwload from 365 website
+# set up git credentials
+# System Preferences > Mission Control > uncheck Automatically rearrange spaces based on most recent use
+
+# workspaces and hotkeys
+# open fullscreen Evernote as first desktop
+# open fullscreen Calendar as second desktop
+# System Preferences > Keyboard > Shortcuts > Mission Control > set Switch to Desktop X to ^(X+2)
+
+# In Alfred, set up shortcuts for Evernote and Calendar
+# get these workflows
+# https://github.com/zenorocha/alfred-workflows
+# https://github.com/untoldwind/alfred2-layout
+# https://github.com/haidersabri/alfred2-crunchbase-workflow
+# set up iTerm2 as default console https://github.com/stuartcryan/custom-iterm-applescripts-for-alfred
+
+# enter license key in Sublime Text
+# set User preferences in Sublime Text to attached file
+
+# XCode setup
+# Menu -> Preferences -> Accounts
+#  transfer credentials from old computer: https://apple.stackexchange.com/questions/57059/how-do-i-transfer-my-ios-developer-profile-to-another-computer
+#  then (also here) log in to that profile
+
+# git
+mkdir ~/.ssh
+cd ~/.ssh
+ssh-keygen -t rsa -b 4096 -C "tom.halgas@gmail.com"
+cd -
+
+# node
+# first we need to clean up preexisting node and npm links
+# https://stackoverflow.com/a/11178106
+rm /usr/local/bin/node /usr/local/bin/npm
+sudo rm -rf /usr/local/{lib/node{,/.npm,_modules},bin,share/man}/{npm*,node*,man1/node*}
+# install n
+# https://github.com/tj/n
+curl -L https://git.io/n-install | bash
+. /Users/tomash/.bash_profile
+# create a symlink - for react-native compilation in XCode
+ln -s $(which node) /usr/local/bin/node
+
+# mysql
+# And MySQL 5.7.8 or greater, which also needs some setup. 
+# Replace VERSION with your MySQL version and username with your computer username and the following script should work - though it rarely does:
+# Copy launch agent into place
+mkdir -p ~/Library/LaunchAgents && cp /usr/local/Cellar/mysql/VERSION/homebrew.mxcl.mysql.plist ~/Library/LaunchAgents/
+# Inject launch agent
+launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+# Set up databases to run as your user account
+# the following failed for me, but somehow the following steps still manage
+mysqld --initialize --verbose --user=`whoami` --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql
+# change the username to your computer username to grant yourself full access:
+mysql -u root -p -e "CREATE USER 'tomash'@'localhost';"
+mysql -u root -p -e "GRANT ALL PRIVILEGES ON * . * TO 'tomash'@'localhost';"
+
+# redis
+# https://medium.com/@petehouston/install-and-config-redis-on-mac-os-x-via-homebrew-eb8df9a4f298
+ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.redis.plist
+# check
+redis-cli ping
+
+# react-native
+npm install -g react-native-cli
+
+# gcloud
+gcloud init
+# add more accounts
+gcloud auth login
+# check
+gcloud auth list
+# get cloud_sql_proxy
+# https://cloud.google.com/sql/docs/mysql/sql-proxy
+curl -o cloud_sql_proxy https://dl.google.com/cloudsql/cloud_sql_proxy.darwin.amd64
+chmod +x cloud_sql_proxy

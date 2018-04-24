@@ -1,4 +1,13 @@
 # sphere
+# gcloud
+gcloud config configurations create sphere
+# or activate existing configuration:
+# gcloud config configurations activate sphere
+# gcloud auth application-default login
+gcloud init
+gcloud auth login
+gcloud auth list
+# api
 mkdir sphere
 cd sphere
 git clone git@github.com:heysphere/api.git api
@@ -17,6 +26,15 @@ mkdir myweb
 git clone git@github.com:DiscreteConcrete/DiscreteConcrete.github.io.git myweb
 
 # artstokk
+# gcloud
+gcloud config configurations create artstokk
+# or activate existing configuration:
+# gcloud config configurations activate sphere
+# gcloud auth application-default login
+gcloud init
+gcloud auth login
+gcloud auth list
+# app
 # setup inspired by https://rationalappdev.com/charts-in-react-native-part-1/
 mkdir artstokk
 cd artstokk

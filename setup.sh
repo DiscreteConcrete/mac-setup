@@ -28,9 +28,13 @@ git config --global alias.up 'pull --rebase --autostash'
 # now manual things
 # login to all installed apps where applicable
 # make sure the following is accessible to user: ~/Library/Application Support/Google/Chrome
-# install Microsoft Office via 365 - donwload from 365 website
+# install Microsoft Office via 365 - download from 365 website
 # set up git credentials
 # System Preferences > Mission Control > uncheck Automatically rearrange spaces based on most recent use
+
+# iTerm2 shortcuts
+# enable Option+left, Option+right, Option+Delete, Option+fn+Delete
+# https://apple.stackexchange.com/a/204802
 
 # workspaces and hotkeys
 # open fullscreen Evernote as first desktop

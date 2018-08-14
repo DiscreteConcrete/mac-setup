@@ -9,7 +9,9 @@ brew "findutils"
 brew "git"
 brew "gnu-sed"
 brew "gnu-tar"
+brew "go"
 brew "htop"
+brew "hub"
 brew "kubernetes-helm"
 brew "mas"
 brew "mysql"
@@ -45,3 +47,4 @@ mas "Slack", id: 803453959
 mas "Spark", id: 1176895641
 mas "Trello", id: 1278508951
 mas "Xcode", id: 497799835
+mas "Bear", id: 1091189122

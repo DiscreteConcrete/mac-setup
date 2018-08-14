@@ -1,58 +1,80 @@
 tell application "iTerm"
-	activate
-	set myterm to (make new terminal)
-	tell myterm
-		launch session "Default Session"
-		tell the last session
-			write text "cd ~/sphere/api"
-			write text "make devenv"
+	tell current window
+		create tab with default profile
+		tell the last tab
+			tell the last session
+				write text "cd ~/sphere/api"
+				write text "make devenv"
+			end tell
 		end tell
-		launch session "Default Session"
-		tell the last session
-			write text "cd ~/sphere/api"
+		create tab with default profile
+		tell the last tab
+			tell the last session
+				write text "cd ~/sphere/api"
+			end tell
 		end tell
-		launch session "Default Session"
-		tell the last session
-			write text "cd ~/sphere/api"
+		create tab with default profile
+		tell the last tab
+			tell the last session
+				write text "cd ~/sphere/api"
+			end tell
 		end tell
-		launch session "Default Session"
-		tell the last session
-			write text "cd ~/sphere/api"
-			write text "node"
+		create tab with default profile
+		tell the last tab
+			tell the last session
+				write text "cd ~/sphere/api"
+				write text "node"
+			end tell
 		end tell
-		launch session "Default Session"
-		tell the last session
-			write text "cd ~/sphere/api"
-			write text "mysql -D sphere_test"
+		create tab with default profile
+		tell the last tab
+			tell the last session
+				write text "cd ~/sphere/api"
+				write text "mysql -D sphere_test"
+			end tell
 		end tell
-		launch session "Default Session"
-		tell the last session
-			write text "cd ~/sphere/api"
-			write text "mysql -D sphere"
+		create tab with default profile
+		tell the last tab
+			tell the last session
+				write text "cd ~/sphere/api"
+				write text "mysql -D sphere"
+			end tell
 		end tell
-		launch session "Default Session"
-		tell the last session
-			write text "./cloud_sql_proxy -dir ."
+		create tab with default profile
+		tell the last tab
+			tell the last session
+				write text "./cloud_sql_proxy -dir ."
+			end tell
 		end tell
-		launch session "Default Session"
-		tell the last session
-			write text "mysql -S sphere-1a6cd:europe-west1:sphere-prod-replica2 -u sqlproxy -D sphere_prod"
+		create tab with default profile
+		tell the last tab
+			tell the last session
+				write text "mysql -S sphere-1a6cd:europe-west1:sphere-prod-replica1 -u sqlproxy -D sphere_prod"
+			end tell
 		end tell
-		launch session "Default Session"
-		tell the last session
-			write text "mysql -S sphere-1a6cd:europe-west1:sphere-prod-failover -u sqlproxy -D sphere_prod"
+		create tab with default profile
+		tell the last tab
+			tell the last session
+				write text "mysql -S sphere-1a6cd:europe-west1:sphere-prod-failover1 -u sqlproxy -D sphere_prod"
+			end tell
 		end tell
-		launch session "Default Session"
-		tell the last session
-			write text "mysql -S sphere-1a6cd:europe-west1:sphere-prod -u sqlproxy -D sphere_prod"
+		create tab with default profile
+		tell the last tab
+			tell the last session
+				write text "mysql -S sphere-1a6cd:europe-west1:sphere-prod -u sqlproxy -D sphere_prod"
+			end tell
 		end tell
-		launch session "Default Session"
-		tell the last session
-			write text "mysql -S sphere-1a6cd:europe-west1:sphere-test -u sqlproxy -D sphere_test"
+		create tab with default profile
+		tell the last tab
+			tell the last session
+				write text "mysql -S sphere-1a6cd:europe-west1:sphere-test -u sqlproxy -D sphere_staging"
+			end tell
 		end tell
-		launch session "Default Session"
-		tell the last session
-			write text "cd ~/sphere/kubernetes"
+		create tab with default profile
+		tell the last tab
+			tell the last session
+				write text "cd ~/sphere/kubernetes"
+			end tell
 		end tell
 	end tell
 end tell

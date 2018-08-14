@@ -29,7 +29,7 @@ git clone git@github.com:DiscreteConcrete/DiscreteConcrete.github.io.git myweb
 # gcloud
 gcloud config configurations create artstokk
 # or activate existing configuration:
-# gcloud config configurations activate sphere
+# gcloud config configurations activate artstokk
 # gcloud auth application-default login
 gcloud init
 gcloud auth login

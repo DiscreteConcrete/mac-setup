@@ -32,14 +32,28 @@ git config --global alias.up 'pull --rebase --autostash'
 # set up git credentials
 # System Preferences > Mission Control > uncheck Automatically rearrange spaces based on most recent use
 
-# iTerm2 shortcuts
+# iTerm2
+# infinite scrollback
+# Navbar -> Profile -> right-click -> Edit profile -> Terminal -> Unlimited Scrollback
+# shortcuts
 # enable Option+left, Option+right, Option+Delete, Option+fn+Delete
 # https://apple.stackexchange.com/a/204802
 
 # workspaces and hotkeys
 # open fullscreen Evernote as first desktop
-# open fullscreen Calendar as second desktop
-# System Preferences > Keyboard > Shortcuts > Mission Control > set Switch to Desktop X to ^(X+2)
+# System Preferences > Keyboard > Shortcuts > Mission Control > set Switch to Desktop X to ^(X+1)
+
+# disable Mac double-space period
+# Keyboard -> Text -> untick Add period with double-space
+
+# remove Siri from touch bar
+# Keyboard -> Customize control strip -> drag something less harmful (like screenshot) over Siri
+
+# Input Sources
+# Add U.S., Russian and Slovak - QWERTY
+# System Preferences > Keyboard > Input Sources
+# enable shortcut ^Space to change input source
+# System Preferences > Keyboard > Shortcuts > Input Sources
 
 # In Alfred, set up shortcuts for Evernote and Calendar
 # get these workflows
@@ -48,8 +62,13 @@ git config --global alias.up 'pull --rebase --autostash'
 # https://github.com/haidersabri/alfred2-crunchbase-workflow
 # set up iTerm2 as default console https://github.com/stuartcryan/custom-iterm-applescripts-for-alfred
 
+# Sublime Text (3)
 # enter license key in Sublime Text
 # set User preferences in Sublime Text to attached file
+# install package controll
+# https://packagecontrol.io/installation
+# install Babel package
+# cmd+shift+p -> Package Controll: Install Package -> Babel
 
 # XCode setup
 # Menu -> Preferences -> Accounts
@@ -108,3 +127,11 @@ gcloud auth list
 # https://cloud.google.com/sql/docs/mysql/sql-proxy
 curl -o cloud_sql_proxy https://dl.google.com/cloudsql/cloud_sql_proxy.darwin.amd64
 chmod +x cloud_sql_proxy
+
+# Go lang
+# https://golang.org/doc/code.html
+export PATH=$PATH:$(go env GOPATH)/bin
+export GOPATH=$(go env GOPATH)
+# https://stackoverflow.com/a/32357023
+mkdir ~/go/bin
+export GOBIN=$GOPATH/bin

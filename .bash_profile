@@ -11,3 +11,7 @@ export HISTTIMEFORMAT="%a %h %d - %r "   # Timestamp.
 shopt -s histappend                      # Append to history, don't overwrite it.
 # Save and reload the history after each command finishes:
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
+# kubectl and autocomplete for gcloud commands
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'

@@ -2,6 +2,7 @@ tap "homebrew/core"
 tap "homebrew/bundle"
 tap "caskroom/cask"
 
+brew "the_silver_searcher" # ag
 brew "bash"
 brew "caddy"
 brew "colordiff"

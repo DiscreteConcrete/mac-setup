@@ -4,6 +4,14 @@ gcloud config configurations create sphere
 # or activate existing configuration:
 # gcloud config configurations activate sphere
 # gcloud auth application-default login
+# if above doesn't work:
+# gcloud auth login --no-launch-browser
+# do this to set up environments
+for NAME in staging production test; do
+  gcloud config set container/cluster sphere-$NAME
+  gcloud container clusters get-credentials sphere-$NAME
+  kubectl config set-context $(kubectl config current-context) --namespace=$NAME
+done
 gcloud init
 gcloud auth login
 gcloud auth list

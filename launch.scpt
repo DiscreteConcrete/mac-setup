@@ -49,13 +49,13 @@ tell application "iTerm"
 		create tab with default profile
 		tell the last tab
 			tell the last session
-				write text "mysql -S sphere-1a6cd:europe-west1:sphere-prod-replica1 -u sqlproxy -D sphere_prod"
+				write text "mysql -S sphere-1a6cd:europe-west1:sphere-prod-replica4 -u sqlproxy -D sphere_prod"
 			end tell
 		end tell
 		create tab with default profile
 		tell the last tab
 			tell the last session
-				write text "mysql -S sphere-1a6cd:europe-west1:sphere-prod-failover1 -u sqlproxy -D sphere_prod"
+				write text "mysql -S sphere-1a6cd:europe-west1:sphere-prod-failover4 -u sqlproxy -D sphere_prod"
 			end tell
 		end tell
 		create tab with default profile

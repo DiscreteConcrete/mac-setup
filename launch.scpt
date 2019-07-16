@@ -49,25 +49,25 @@ tell application "iTerm"
 		create tab with default profile
 		tell the last tab
 			tell the last session
-				write text "mysql -S sphere-1a6cd:europe-west1:sphere-prod-replica4 -u sqlproxy -D sphere_prod"
+				write text "sleep 3 ; mysql -S sphere-1a6cd:europe-west1:sphere-prod-replica4 -u sqlproxy -D sphere_prod"
 			end tell
 		end tell
 		create tab with default profile
 		tell the last tab
 			tell the last session
-				write text "mysql -S sphere-1a6cd:europe-west1:sphere-prod-failover4 -u sqlproxy -D sphere_prod"
+				write text "sleep 3 ; mysql -S sphere-1a6cd:europe-west1:sphere-prod-failover4 -u sqlproxy -D sphere_prod"
 			end tell
 		end tell
 		create tab with default profile
 		tell the last tab
 			tell the last session
-				write text "mysql -S sphere-1a6cd:europe-west1:sphere-prod -u sqlproxy -D sphere_prod"
+				write text "sleep 3 ; mysql -S sphere-1a6cd:europe-west1:sphere-prod -u sqlproxy -D sphere_prod"
 			end tell
 		end tell
 		create tab with default profile
 		tell the last tab
 			tell the last session
-				write text "mysql -S sphere-1a6cd:europe-west1:sphere-test -u sqlproxy -D sphere_staging"
+				write text "sleep 3 ; mysql -S sphere-1a6cd:europe-west1:sphere-test -u sqlproxy -D sphere_staging"
 			end tell
 		end tell
 		create tab with default profile

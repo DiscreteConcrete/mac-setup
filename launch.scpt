@@ -3,40 +3,40 @@ tell application "iTerm"
 		create tab with default profile
 		tell the last tab
 			tell the last session
-				write text "cd ~/sphere/api"
+				write text "cd ~/sphere/backspace/api"
 				write text "make devenv"
 			end tell
 		end tell
 		create tab with default profile
 		tell the last tab
 			tell the last session
-				write text "cd ~/sphere/api"
+				write text "cd ~/sphere/backspace/api"
 			end tell
 		end tell
 		create tab with default profile
 		tell the last tab
 			tell the last session
-				write text "cd ~/sphere/api"
+				write text "cd ~/sphere/backspace/api"
 			end tell
 		end tell
 		create tab with default profile
 		tell the last tab
 			tell the last session
-				write text "cd ~/sphere/api"
+				write text "cd ~/sphere/backspace/api"
 				write text "node"
 			end tell
 		end tell
 		create tab with default profile
 		tell the last tab
 			tell the last session
-				write text "cd ~/sphere/api"
+				write text "cd ~/sphere/backspace/api"
 				write text "mysql -D sphere_test"
 			end tell
 		end tell
 		create tab with default profile
 		tell the last tab
 			tell the last session
-				write text "cd ~/sphere/api"
+				write text "cd ~/sphere/backspace/api"
 				write text "mysql -D sphere"
 			end tell
 		end tell

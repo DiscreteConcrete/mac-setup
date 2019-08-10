@@ -135,3 +135,6 @@ export GOPATH=$(go env GOPATH)
 # https://stackoverflow.com/a/32357023
 mkdir ~/go/bin
 export GOBIN=$GOPATH/bin
+
+# Bear
+# Enable markdown compatibility mode in settings so that hyphens do not show as task boxes

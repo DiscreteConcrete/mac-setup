@@ -31,6 +31,8 @@ git config --global alias.up 'pull --rebase --autostash'
 # install Microsoft Office via 365 - download from 365 website
 # set up git credentials
 # System Preferences > Mission Control > uncheck Automatically rearrange spaces based on most recent use
+# disable annoying jumping icons on the dock panel:
+# System Preferences > Dock > uncheck Animate opening applications
 
 # iTerm2
 # infinite scrollback
@@ -69,6 +71,9 @@ git config --global alias.up 'pull --rebase --autostash'
 # https://packagecontrol.io/installation
 # install Babel package
 # cmd+shift+p -> Package Controll: Install Package -> Babel
+# install TypeScript package
+# https://stackoverflow.com/a/47053967
+# cmd+shift+p -> Package Controll: Install Package -> TypeScript
 
 # XCode setup
 # Menu -> Preferences -> Accounts

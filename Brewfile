@@ -45,6 +45,7 @@ cask "spotify"
 cask "station"
 cask "sublime-text"
 cask "telegram"
+cask "visual-studio-code"
 
 mas "Slack", id: 803453959
 mas "Spark", id: 1176895641

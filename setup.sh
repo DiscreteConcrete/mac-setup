@@ -75,6 +75,16 @@ git config --global alias.up 'pull --rebase --autostash'
 # https://stackoverflow.com/a/47053967
 # cmd+shift+p -> Package Controll: Install Package -> TypeScript
 
+# VSCode
+# Disable telemetry
+# https://code.visualstudio.com/docs/supporting/faq#_how-to-disable-telemetry-reporting
+# Code > Preferences > Settings > search for telemetry, uncheck Telemetry: Enable Telemetry
+# Disable crash reporting
+# https://code.visualstudio.com/docs/supporting/faq#_how-to-disable-crash-reporting
+# Code > Preferences > Settings > search for crash, uncheck Telemetry: Enable Crash Reporter
+# Install Sublime text key mapping extension
+# Code > Preferences > Extensions > search for sublime > install
+
 # XCode setup
 # Menu -> Preferences -> Accounts
 #  transfer credentials from old computer: https://apple.stackexchange.com/questions/57059/how-do-i-transfer-my-ios-developer-profile-to-another-computer

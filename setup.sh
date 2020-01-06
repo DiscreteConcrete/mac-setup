@@ -94,7 +94,9 @@ git config --global alias.up 'pull --rebase --autostash'
 mkdir ~/.ssh
 cd ~/.ssh
 ssh-keygen -t rsa -b 4096 -C "tom.halgas@gmail.com"
+ssh-keygen -t ed25519 -C "tom@sphere.me"
 cd -
+# now add the above ssh keys to GitHub and Sphere GitLab, respectively
 
 # node
 # first we need to clean up preexisting node and npm links

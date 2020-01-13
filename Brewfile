@@ -13,6 +13,7 @@ brew "gnu-tar"
 brew "go"
 brew "htop"
 brew "hub"
+brew "inetutils" # for ftp command line tool
 brew "kubernetes-helm"
 brew "mas"
 brew "mysql"

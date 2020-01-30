@@ -23,6 +23,7 @@ brew "python" # for pip / jinja2
 brew "redis"
 brew "rename"
 brew "rsync"
+brew "tesseract" # extract text from images
 brew "watch"
 brew "watchman" # for react-native
 brew "wget"

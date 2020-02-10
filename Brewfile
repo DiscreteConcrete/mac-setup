@@ -7,6 +7,7 @@ brew "bash"
 brew "caddy"
 brew "colordiff"
 brew "findutils"
+brew "fswatch" # for watching changes in folders
 brew "git"
 brew "gnu-sed"
 brew "gnu-tar"

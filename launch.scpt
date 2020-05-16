@@ -73,7 +73,17 @@ delay 1
 tell application "Signal" to activate
 tell application "WhatsApp" to activate
 tell application "Telegram" to activate
+-- open Sphere in a Safari window
+tell application "Safari"
+	activate
+	delay 1
+	-- https://stackoverflow.com/a/7016686
+	set the URL of the front document to "https://beta.sphere.me"
+end tell
+-- Would love to open Slack thus:
 -- tell application "Slack" to activate
+-- but Slack is not a good citizen and opens on script load rather than when it is supposed to be executed
+-- https://discussions.apple.com/thread/7778059
 delay 1
 
 -- Space 3 - Bear and Chrome

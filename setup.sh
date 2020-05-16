@@ -60,6 +60,10 @@ git config --global alias.up 'pull --rebase --autostash'
 # enable shortcut ^Space to change input source
 # System Preferences > Keyboard > Shortcuts > Input Sources
 
+# launch script
+# Set launch.scpt to launch on startup
+# Users & Groups > Login Items > add launch.scpt
+
 # Alfred
 # set up shortcuts to move to full-screen apps as if they were Spaces
 # alternatively, just import Calendar.alfredworkflow

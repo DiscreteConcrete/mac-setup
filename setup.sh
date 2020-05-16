@@ -57,7 +57,9 @@ git config --global alias.up 'pull --rebase --autostash'
 # enable shortcut ^Space to change input source
 # System Preferences > Keyboard > Shortcuts > Input Sources
 
-# In Alfred, set up shortcuts for Evernote and Calendar
+# Alfred
+# set up shortcuts to move to full-screen apps as if they were Spaces
+# alternatively, just import Calendar.alfredworkflow
 # get these workflows
 # https://github.com/zenorocha/alfred-workflows
 # https://github.com/untoldwind/alfred2-layout

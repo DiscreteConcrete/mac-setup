@@ -37,3 +37,7 @@ if [ -f "${SSH_ENV}" ]; then
 else
   start_agent;
 fi
+
+# Add GitHub identity and silence output
+# https://superuser.com/a/737674
+ssh-add ~/.ssh/github 2> /dev/null

@@ -30,6 +30,7 @@ brew "watchman" # for react-native
 brew "wget"
 brew "yarn"
 
+cask "1password"
 cask "alfred"
 cask "docker"
 cask "dropbox"

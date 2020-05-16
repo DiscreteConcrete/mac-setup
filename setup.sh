@@ -73,6 +73,12 @@ git config --global alias.up 'pull --rebase --autostash'
 # https://github.com/haidersabri/alfred2-crunchbase-workflow
 # set up iTerm2 as default console https://github.com/stuartcryan/custom-iterm-applescripts-for-alfred
 
+# 1Password
+# if the desktop app is throwing "1Password can’t create a required support file" modals, try:
+# https://support.1password.com/cs/native-messaging-chown/
+# and if not even that works:
+# https://discussions.agilebits.com/discussion/comment/382174/#Comment_382174
+
 # Sublime Text (3)
 # enter license key in Sublime Text
 # set User preferences in Sublime Text to attached file

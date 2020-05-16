@@ -48,6 +48,9 @@ git config --global alias.up 'pull --rebase --autostash'
 # disable Mac double-space period
 # Keyboard -> Text -> untick Add period with double-space
 
+# disable Mac force click
+# Trackpad -> Point & Click -> untick Force Click and Haptic Feedback
+
 # remove Siri from touch bar
 # Keyboard -> Customize control strip -> drag something less harmful (like screenshot) over Siri
 

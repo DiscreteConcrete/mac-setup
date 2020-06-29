@@ -79,6 +79,11 @@ git config --global alias.up 'pull --rebase --autostash'
 # and if not even that works:
 # https://discussions.agilebits.com/discussion/comment/382174/#Comment_382174
 
+# Little Snitch
+# requires running the downloaded dmg, something like:
+# /usr/local/Caskroom/little-snitch/4.5.1/LittleSnitch-4.5.1.dmg
+# also, due to permissions, might be easier to copy somewhere and then run
+
 # Sublime Text (3)
 # enter license key in Sublime Text
 # set User preferences in Sublime Text to attached file

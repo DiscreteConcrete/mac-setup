@@ -64,6 +64,17 @@ tell application "System Events" to tell process "Trello"
 	keystroke "Reading List"
 	delay 0.1
 	key code 36 -- enter
+
+	-- open new window
+	key code 45 using {command down, shift down} -- cmd+shift+n
+	delay 4
+
+	-- open "My Board" board
+	keystroke "b"
+	delay 0.1
+	keystroke "My Board"
+	delay 0.1
+	key code 36 -- enter
 end tell
 
 -- Space 2 - communication

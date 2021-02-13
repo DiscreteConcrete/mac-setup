@@ -23,7 +23,7 @@ end tell
 tell application "System Events" to tell process "Finder" to key code 19 using {control down}
 delay 1
 tell application "Trello" to activate
-delay 5
+delay 7
 tell application "System Events" to tell process "Trello"
 	-- open "To Do" board
 	keystroke "b"
@@ -34,7 +34,7 @@ tell application "System Events" to tell process "Trello"
 
 	-- open new window
 	key code 45 using {command down, shift down} -- cmd+shift+n
-	delay 4
+	delay 5
 
 	-- open "Sphere" board
 	keystroke "b"
@@ -45,7 +45,7 @@ tell application "System Events" to tell process "Trello"
 
 	-- open new window
 	key code 45 using {command down, shift down} -- cmd+shift+n
-	delay 4
+	delay 5
 
 	-- open "Research" board
 	keystroke "b"
@@ -56,7 +56,7 @@ tell application "System Events" to tell process "Trello"
 
 	-- open new window
 	key code 45 using {command down, shift down} -- cmd+shift+n
-	delay 4
+	delay 5
 
 	-- open "Reading List" board
 	keystroke "b"
@@ -67,7 +67,7 @@ tell application "System Events" to tell process "Trello"
 
 	-- open new window
 	key code 45 using {command down, shift down} -- cmd+shift+n
-	delay 4
+	delay 5
 
 	-- open "My Board" board
 	keystroke "b"
@@ -147,7 +147,7 @@ end tell
 tell application "System Events" to tell process "Finder" to key code 22 using {control down}
 delay 1
 tell application "Mendeley Desktop" to activate
-delay 3
+delay 7
 
 -- return to space 3
 tell application "System Events" to tell process "Finder" to key code 21 using {control down}

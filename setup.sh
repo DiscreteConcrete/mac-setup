@@ -62,7 +62,7 @@ git config --global alias.up 'pull --rebase --autostash'
 
 # launch script
 # Set launch.scpt to launch on startup
-# Users & Groups > Login Items > add launch.scpt
+# Users & Groups > Login Items > add launch.applescript
 
 # Alfred
 # set up shortcuts to move to full-screen apps as if they were Spaces

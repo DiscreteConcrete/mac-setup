@@ -31,44 +31,44 @@ tell application "System Events" to tell process "Trello"
 	keystroke "To Do"
 	delay 0.1
 	key code 36 -- enter
-
+	
 	-- open new window
 	key code 45 using {command down, shift down} -- cmd+shift+n
 	delay 5
-
+	
 	-- open "Sphere" board
 	keystroke "b"
 	delay 0.1
 	keystroke "Sphere"
 	delay 0.1
 	key code 36 -- enter
-
+	
 	-- open new window
 	key code 45 using {command down, shift down} -- cmd+shift+n
 	delay 5
-
+	
 	-- open "Research" board
 	keystroke "b"
 	delay 0.1
 	keystroke "Research"
 	delay 0.1
 	key code 36 -- enter
-
+	
 	-- open new window
 	key code 45 using {command down, shift down} -- cmd+shift+n
 	delay 5
-
+	
 	-- open "Reading List" board
 	keystroke "b"
 	delay 0.1
 	keystroke "Reading List"
 	delay 0.1
 	key code 36 -- enter
-
+	
 	-- open new window
 	key code 45 using {command down, shift down} -- cmd+shift+n
 	delay 5
-
+	
 	-- open "My Board" board
 	keystroke "b"
 	delay 0.1
@@ -85,12 +85,11 @@ tell application "Signal" to activate
 tell application "WhatsApp" to activate
 tell application "Telegram" to activate
 -- open Sphere in a Safari window
-tell application "Safari"
-	activate
-	delay 1
-	-- https://stackoverflow.com/a/7016686
-	set the URL of the front document to "https://beta.sphere.me"
-end tell
+tell application "Safari" to activate
+delay 1
+-- https://stackoverflow.com/a/7016686
+-- note that placing this and the previous Safari call into 1 tell block does not work
+tell application "Safari" to set the URL of the front document to "https://beta.sphere.me"
 -- Would love to open Slack thus:
 -- tell application "Slack" to activate
 -- but Slack is not a good citizen and opens on script load rather than when it is supposed to be executed

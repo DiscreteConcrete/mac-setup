@@ -125,8 +125,9 @@ rm /usr/local/bin/node /usr/local/bin/npm
 sudo rm -rf /usr/local/{lib/node{,/.npm,_modules},bin,share/man}/{npm*,node*,man1/node*}
 # install n
 # https://github.com/tj/n
-curl -L https://git.io/n-install | bash
-. /Users/tomash/.bash_profile
+# note that originally it's for bash, not zsh
+curl -L https://git.io/n-install | zsh
+. /Users/tomash/.zshrc
 # create a symlink - for react-native compilation in XCode
 ln -s $(which node) /usr/local/bin/node
 

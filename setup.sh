@@ -24,6 +24,9 @@ pip3 install j2cli PyYAML
 # Convenient git alias
 git config --global alias.up 'pull --rebase --autostash'
 
+# since Mac OS Catalina one needs to run this to run programs from unverified developers
+# https://www.imore.com/how-open-apps-anywhere-macos-catalina-and-mojave
+sudo spctl --master-disable
 
 # now manual things
 # login to all installed apps where applicable

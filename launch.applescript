@@ -69,10 +69,10 @@ tell application "System Events" to tell process "Trello"
 	key code 45 using {command down, shift down} -- cmd+shift+n
 	delay 5
 	
-	-- open "My Board" board
+	-- open "V&T" board
 	keystroke "b"
 	delay 0.1
-	keystroke "My Board"
+	keystroke "V&T"
 	delay 0.1
 	key code 36 -- enter
 end tell

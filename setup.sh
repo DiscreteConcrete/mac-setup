@@ -38,8 +38,26 @@ sudo spctl --master-disable
 # System Preferences > Dock > uncheck Animate opening applications
 
 # iTerm2
+# inspired by: https://chamikakasun.medium.com/iterm2-zsh-oh-my-zsh-the-most-power-full-terminal-on-macos-2021-guide-macos-big-sur-5bb498976dc9
+# ZSH
+# check if installed
+zsh --version
+# if not, brew it
+brew install zsh
+# oh-my-zsh
+# follow instructions here: https://ohmyz.sh/#install
+# auto-suggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+# in ~/.zshrc, add it as plugin, for example:
+# plugins=(git zsh-autosuggestions)
+# syntax highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+# install nice theme: Powerlevel10k
+# https://github.com/romkatv/powerlevel10k#get-started
+# and then open the terminal and go through setup
 # infinite scrollback
-# Navbar -> Profile -> right-click -> Edit profile -> Terminal -> Unlimited Scrollback
+# Navbar -> Profiles -> Open Profiles... -> right-click -> Edit profile -> Terminal -> Unlimited Scrollback
 # shortcuts
 # enable Option+left, Option+right, Option+Delete, Option+fn+Delete
 # https://apple.stackexchange.com/a/204802

@@ -32,6 +32,7 @@ brew "yarn"
 
 cask "1password"
 cask "alfred"
+cask "brave-browser"
 cask "docker"
 cask "dropbox"
 cask "expressvpn"

@@ -96,12 +96,12 @@ tell application "Telegram" to activate
 -- https://discussions.apple.com/thread/7778059
 delay 1
 
--- Space 3 - Bear and Chrome
+-- Space 3 - Bear and Brave
 -- switch to space 3 (using ^4)
 tell application "System Events" to tell process "Finder" to key code 21 using {control down}
 delay 1
 tell application "Bear" to activate
-tell application "Google Chrome" to activate
+tell application "Brave Browser" to activate
 delay 1
 
 -- Space 4 - Sublime and iTerm

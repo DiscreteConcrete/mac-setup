@@ -76,7 +76,9 @@ echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> 
 # Keyboard -> Customize control strip -> drag something less harmful (like screenshot) over Siri
 
 # Input Sources
-# Add U.S., Russian and Slovak - QWERTY
+# Add custom German - QWERTY keyboard
+# open German\ QWERTY\ bundle.bundle (with Keyboard Installer)
+# Enable U.S., Russian, Slovak - QWERTY and (custom) German - QWERTY
 # System Preferences > Keyboard > Input Sources
 # enable shortcut ^Space to change input source
 # System Preferences > Keyboard > Shortcuts > Input Sources

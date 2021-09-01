@@ -75,6 +75,9 @@ tell application "System Events" to tell process "Trello"
 	keystroke "V&T"
 	delay 0.1
 	key code 36 -- enter
+	
+	-- wait a bit to give it time to load nicely
+	delay 5
 end tell
 
 -- Space 2 - communication
@@ -102,7 +105,7 @@ tell application "System Events" to tell process "Finder" to key code 21 using {
 delay 1
 tell application "Bear" to activate
 tell application "Brave Browser" to activate
-delay 1
+delay 5
 
 -- Space 4 - Sublime and iTerm
 -- switch to space 4 (using ^5)
@@ -111,6 +114,7 @@ delay 1
 tell application "Sublime Text" to activate
 tell application "iTerm"
 	activate
+	delay 0.1
 	tell current window
 		create tab with default profile
 		tell the last tab

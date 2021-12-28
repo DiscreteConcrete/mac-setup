@@ -7,17 +7,6 @@
 -- this script will run on startup, so give the machine a couple seconds to warm up
 delay 5
 
--- Calendar
--- switch to space 1 (using ^2)
-tell application "System Events" to tell process "Finder" to key code 19 using {control down}
-delay 1
-tell application "Calendar" to activate
-delay 1
-tell application "System Events" to tell process "Calendar"
-	set value of attribute "AXFullScreen" of window 1 to true
-end tell
--- TODO: move the fullscreen app to be before space 1
-
 -- Space 1 - Trello
 -- switch to space 1 (using ^2)
 tell application "System Events" to tell process "Finder" to key code 19 using {control down}

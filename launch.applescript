@@ -33,7 +33,7 @@ tell application "System Events" to tell process "Finder" to key code 21 using {
 delay 1
 tell application "Bear" to activate
 tell application "Brave Browser" to activate
-delay 5
+delay 10
 
 -- Space 4 - Sublime and iTerm
 -- switch to space 4 (using ^5)

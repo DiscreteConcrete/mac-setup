@@ -35,42 +35,34 @@ tell application "Bear" to activate
 tell application "Brave Browser" to activate
 delay 10
 
--- Space 4 - Sublime and iTerm
+-- Space 4 - Sublime and Terminal
 -- switch to space 4 (using ^5)
 tell application "System Events" to tell process "Finder" to key code 23 using {control down}
 delay 1
 tell application "Sublime Text" to activate
-tell application "iTerm"
+tell application "Terminal"
 	activate
-	delay 0.1
-	tell current window
-		create tab with default profile
-		tell the last tab
-			tell the last session
-				write text "sh ~/setup/lastScreenshotToTextToClipboard.sh"
-			end tell
-		end tell
-		create tab with default profile
-		tell the last tab
-			tell the last session
-				write text "cd ~/setup/"
-			end tell
-		end tell
-		create tab with default profile
-		tell the last tab
-			tell the last session
-				write text "ping -c 3 google.com"
-			end tell
-		end tell
-		-- To create a new window in a new space, see here:
-		-- https://superuser.com/questions/537458/is-there-a-way-to-script-setting-up-a-space-mission-control-in-osx
-		create tab with default profile
-		tell the last tab
-			tell the last session
-				write text "cd ~/phd/thesis"
-			end tell
-		end tell
-	end tell
+	delay 1
+	repeat while contents of selected tab of front window starts with linefeed
+		delay 0.01
+	end repeat
+	do script "sh ~/setup/lastScreenshotToTextToClipboard.sh" in front window
+	-- opening new tab taken from here https://superuser.com/a/466650
+	tell application "System Events" to keystroke "t" using command down
+	repeat while contents of selected tab of front window starts with linefeed
+		delay 0.01
+	end repeat
+	do script "cd ~/setup/" in front window
+	tell application "System Events" to keystroke "t" using command down
+	repeat while contents of selected tab of front window starts with linefeed
+		delay 0.01
+	end repeat
+	do script "ping -c 1 google.com" in front window
+	tell application "System Events" to keystroke "t" using command down
+	repeat while contents of selected tab of front window starts with linefeed
+		delay 0.01
+	end repeat
+	do script "cd ~/phd/thesis" in front window
 end tell
 
 -- Space 5 - Research

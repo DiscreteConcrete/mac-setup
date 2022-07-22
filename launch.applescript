@@ -78,7 +78,7 @@ end tell
 tell application "System Events" to tell process "Finder" to key code 22 using {control down}
 delay 1
 tell application "Mendeley Desktop" to activate
-delay 7
+delay 12
 
 -- return to space 3
 tell application "System Events" to tell process "Finder" to key code 21 using {control down}

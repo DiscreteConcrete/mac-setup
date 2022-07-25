@@ -199,3 +199,6 @@ export GOBIN=$GOPATH/bin
 
 # Bear
 # Enable markdown compatibility mode in settings so that hyphens do not show as task boxes
+
+# Focus mode - turn off sharing with other devices
+# top OS panel -> Focus Mode -> Focus Preferences -> untick "Share across devices"

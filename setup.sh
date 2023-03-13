@@ -85,7 +85,7 @@ echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> 
 
 # launch script
 # Set launch.scpt to launch on startup
-# Users & Groups > Login Items > add launch.applescript
+# General > Login Items > add launch.applescript
 
 # Alfred
 # set up shortcuts to move to full-screen apps as if they were Spaces
@@ -202,3 +202,8 @@ export GOBIN=$GOPATH/bin
 
 # Focus mode - turn off sharing with other devices
 # top OS panel -> Focus Mode -> Focus Preferences -> untick "Share across devices"
+
+# Check all communication tools that they don't produce annoying notification sounds
+
+# Enable touchpad tap to click
+# System Settings -> Trackpad -> Tap to click

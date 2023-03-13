@@ -40,6 +40,7 @@ cask "spotify"
 cask "sublime-text"
 cask "telegram"
 cask "visual-studio-code"
+cask "warp"
 
 mas "Slack", id: 803453959
 mas "Trello", id: 1278508951

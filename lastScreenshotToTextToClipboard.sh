@@ -15,6 +15,7 @@ fswatch --batch-marker=EOF -xn ~/Desktop/ | while read file event; do
 		tesseract ~/Desktop/"$(ls -1 ~/Desktop/ | grep Screen\ Shot\ 20 | tail -1)" .lastScreenshotToTextToClipboard.temp && tr '\n' ' ' < .lastScreenshotToTextToClipboard.temp.txt | pbcopy
 		# delete temporary file
 		rm .lastScreenshotToTextToClipboard.temp.txt
+		echo "Text from screenshot copied to clipboard."
 	fi
 
 	if [[ "$file $event" == */Screenshot\ 20*.png\ 592 ]]; then
@@ -22,5 +23,6 @@ fswatch --batch-marker=EOF -xn ~/Desktop/ | while read file event; do
 		tesseract ~/Desktop/"$(ls -1 ~/Desktop/ | grep Screenshot\ 20 | tail -1)" .lastScreenshotToTextToClipboard.temp && tr '\n' ' ' < .lastScreenshotToTextToClipboard.temp.txt | pbcopy
 		# delete temporary file
 		rm .lastScreenshotToTextToClipboard.temp.txt
+		echo "Text from screenshot copied to clipboard."
 	fi
 done

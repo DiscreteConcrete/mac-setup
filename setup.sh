@@ -33,6 +33,11 @@ sudo spctl --master-disable
 
 # login to all installed apps where applicable
 
+# run Espanso for the first time for a setup
+# copy/replace the base.yml here to the Espanso config location
+# for me it was here:
+# /Users/tomash/Library/Application Support/espanso
+
 # make sure the following is accessible to user: ~/Library/Application Support/Google/Chrome
 
 # install Microsoft Office via 365 - download from 365 website

@@ -1,10 +1,12 @@
 tap "homebrew/core"
 tap "homebrew/bundle"
 tap "caskroom/cask"
+tap "espanso/espanso"
 
 brew "the_silver_searcher" # ag
 brew "bash"
 # brew "colordiff"
+brew "espanso" # open source text expander
 # brew "findutils"
 brew "fswatch" # for watching changes in folders
 brew "git"

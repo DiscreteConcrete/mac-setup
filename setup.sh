@@ -28,16 +28,23 @@ git config --global alias.up 'pull --rebase --autostash'
 # https://www.imore.com/how-open-apps-anywhere-macos-catalina-and-mojave
 sudo spctl --master-disable
 
+
 # now manual things
+
 # login to all installed apps where applicable
+
 # make sure the following is accessible to user: ~/Library/Application Support/Google/Chrome
+
 # install Microsoft Office via 365 - download from 365 website
+
 # set up git credentials
+
 # System Preferences > Mission Control > uncheck Automatically rearrange spaces based on most recent use
+
 # disable annoying jumping icons on the dock panel:
 # System Preferences > Dock > uncheck Animate opening applications
 
-# iTerm2
+# iTerm2 - TODO: not sure how relevant this section is since I switched to Warp
 # inspired by: https://chamikakasun.medium.com/iterm2-zsh-oh-my-zsh-the-most-power-full-terminal-on-macos-2021-guide-macos-big-sur-5bb498976dc9
 # ZSH
 # check if installed
@@ -148,6 +155,7 @@ rm /usr/local/bin/node /usr/local/bin/npm
 sudo rm -rf /usr/local/{lib/node{,/.npm,_modules},bin,share/man}/{npm*,node*,man1/node*}
 # install n
 # https://github.com/tj/n
+# make sure to read the README for permission commands to run, otherwise you will keep hitting permission errors
 # note that originally it's for bash, not zsh
 curl -L https://git.io/n-install | zsh
 . /Users/tomash/.zshrc

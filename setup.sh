@@ -212,6 +212,19 @@ export GOBIN=$GOPATH/bin
 
 # Bear
 # Enable markdown compatibility mode in settings so that hyphens do not show as task boxes
+# Then add shortcuts for headings so that it's the same shortcuts as for other apps
+# 1. Identify the Menu Command: Open Bear and find the exact menu command for creating a secondary title. Make sure to note its exact name as it appears in the menu, including any capitalization.
+# 	In this case it's "Heading 1" until "Heading 6"
+# 2. Close Bear: Quit the Bear app to ensure the changes are applied correctly.
+# 3. Open System Preferences: Go to the Apple Menu and select System Preferences.
+# 4. Access Keyboard Settings: Click on the Keyboard pane and then select the Shortcuts tab.
+# Create a New Shortcut:
+# 5. In the left column, click on App Shortcuts.
+# 6. Click the + button to add a new shortcut.
+# 7. In the pop-up sheet, choose Bear as the application.
+# 8. Enter the exact name of the menu command for the secondary title in the Menu Title field.
+# 9. Assign your desired keyboard shortcut in the Keyboard Shortcut field.
+# 10. Apply and Test: Click Add to save the shortcut. Reopen Bear and test your new shortcut to ensure it works as expected.
 
 # Focus mode - turn off sharing with other devices
 # top OS panel -> Focus Mode -> Focus Preferences -> untick "Share across devices"

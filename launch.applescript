@@ -18,10 +18,11 @@ delay 3
 -- switch to space 2 (using ^3)
 tell application "System Events" to tell process "Finder" to key code 20 using {control down}
 delay 1
-tell application "Discord" to activate
 tell application "WhatsApp" to activate
 tell application "Signal" to activate
 tell application "Telegram" to activate
+-- Would love to open Discord like this, but it's not a good citizen can can take 40 seconds of update installations to start
+-- tell application "Discord" to activate
 -- Would love to open Slack thus:
 -- tell application "Slack" to activate
 -- but Slack is not a good citizen and opens on script load rather than when it is supposed to be executed
